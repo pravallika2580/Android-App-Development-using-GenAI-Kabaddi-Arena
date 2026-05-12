@@ -149,3 +149,4 @@ The project demonstrates the practical use of Android development concepts inclu
 - Bitmap image sharing
 - Real-time UI updates
 ```
+# 📸 Screenshots
