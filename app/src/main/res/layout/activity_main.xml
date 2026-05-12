@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#07152B">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/kabaddi_logo"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KABADDI"
+        android:textColor="#FF7A00"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bebas_neue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARENA"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bebas_neue"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRACK. ANALYZE. IMPROVE."
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/btnStartMatch"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="▶ START MATCH"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins_regular"
+        android:backgroundTint="#FF7A00"/>
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="↺ MATCH HISTORY"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#10233F"/>
+
+    <Button
+        android:id="@+id/btnPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="▂▅▇ PERFORMANCE"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#10233F"/>
+
+</LinearLayout>

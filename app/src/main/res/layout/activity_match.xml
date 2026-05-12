@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07152B">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START MATCH"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <EditText
+            android:id="@+id/etOpponent"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Opponent Team"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:backgroundTint="#10233F" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Match Date"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#10233F" />
+
+        <EditText
+            android:id="@+id/etVideoLink"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Match Video Link"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#10233F" />
+
+        <TextView
+            android:id="@+id/txtPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <!-- RAID TIMER SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raid Timer"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp" />
+
+            <FrameLayout
+                android:id="@+id/timerCircle"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/timer_circle_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tvTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action Buttons"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="4dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRaid"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="RAID\n+1"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"
+                app:backgroundTint="#28A745"
+                app:cornerRadius="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRaidFailed"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="FAILED\nRAID"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"
+                app:backgroundTint="#DC3545"
+                app:cornerRadius="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTackle"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="TACKLE\n+1"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="4dp"
+                app:backgroundTint="#007BFF"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUndo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="↩ Undo Last Action"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            app:backgroundTint="#2A1A10"
+            app:cornerRadius="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Finish Match"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:backgroundTint="#FF7A00"
+            app:cornerRadius="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPerformance"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="View Performance"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#FF7A00"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
