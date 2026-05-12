@@ -148,5 +148,13 @@ The project demonstrates the practical use of Android development concepts inclu
 - FileProvider
 - Bitmap image sharing
 - Real-time UI updates
-```
+
 # 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/home.jpeg" width="220"/>
+  <img src="screenshots/match.jpeg" width="220"/>
+  <img src="screenshots/history.jpeg" width="220"/>
+  <img src="screenshots/performance.jpeg" width="220"/>
+</p>
+
